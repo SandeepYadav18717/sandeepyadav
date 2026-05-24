@@ -1,0 +1,126 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;900&family=JetBrains+Mono:wght@400;700&display=swap');*{margin:0;padding:0;box-sizing:border-box;}html,body{width:100%;max-width:100%;overflow-x:hidden;background:#050709;color:#f1f5f9;font-family:'Outfit',sans-serif;}.main-page{min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:5%;position:relative;overflow:hidden;background:#050709;}.main-page::before{content:"";position:absolute;width:max(40vw,300px);height:max(40vw,300px);top:-10%;right:-10%;border-radius:50%;background:radial-gradient(circle,rgba(74,222,128,0.08) 0%,transparent 70%);filter:blur(20px);pointer-events:none;}.main-page::after{content:"";position:absolute;width:max(35vw,250px);height:max(35vw,250px);bottom:-10%;left:-10%;border-radius:50%;background:radial-gradient(circle,rgba(56,189,248,0.06) 0%,transparent 70%);filter:blur(20px);pointer-events:none;}.main-page *{position:relative;z-index:1;}#Heading_1{width:fit-content;background:rgba(74,222,128,0.08);border:1px solid rgba(74,222,128,0.2);color:#4ade80;padding:8px 18px;border-radius:100px;font-size:clamp(10px,1.5vw,12px);font-family:'JetBrains Mono',monospace;letter-spacing:2px;text-transform:uppercase;margin-bottom:28px;}#Name{font-size:clamp(40px,8vw,95px);font-weight:900;line-height:1;letter-spacing:-0.04em;margin-bottom:15px;word-break:break-word;}#Heading_2{color:#94a3b8;font-size:clamp(14px,2vw,18px);font-family:'JetBrains Mono',monospace;margin-bottom:30px;}#Description{max-width:650px;width:100%;color:#94a3b8;font-size:clamp(15px,2vw,18px);line-height:1.6;margin-bottom:40px;}button{width:fit-content;background:#4ade80;color:black;border:none;border-radius:12px;padding:14px 28px;font-size:15px;font-weight:700;cursor:pointer;transition:0.3s;}button:hover{background:#86efac;transform:translateY(-3px);box-shadow:0 10px 30px rgba(74,222,128,0.3);}@media(max-width:768px){.main-page{padding:30px 20px;}button{width:100%;}}
+/* REMOVE WHITE SPACE */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+html{
+  width:100%;
+  overflow-x:hidden;
+}
+body{
+  width:100%;
+  overflow-x:hidden;
+  background:#050709;
+  color:#f1f5f9;
+  font-family:'Outfit',sans-serif;
+}
+
+/* MAIN PAGE */
+.main-page{
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  padding:80px;
+  position:relative;
+  overflow:hidden;
+  background:#050709;
+}
+
+/* GREEN GLOW */
+.main-page::before{
+  content:"";
+  position:absolute;
+  width:600px;
+  height:600px;
+  top:-150px;
+  right:-80px;
+  border-radius:50%;
+  background:radial-gradient(circle, rgba(74,222,128,0.08) 0%, transparent 70%);
+  filter:blur(20px);
+}
+
+/* BLUE GLOW */
+.main-page::after{
+  content:"";
+  position:absolute;
+  width:500px;
+  height:500px;
+  bottom:-100px;
+  left:-50px;
+  border-radius:50%;
+  background:radial-gradient(circle, rgba(56,189,248,0.06) 0%, transparent 70%);
+  filter:blur(20px);
+}
+
+/* KEEP TEXT ABOVE GLOW */
+.main-page *{
+  position:relative;
+  z-index:1;
+}
+
+/* AVAILABLE FOR OPPORTUNITIES */
+#Heading_1{
+  width:fit-content;
+  background:rgba(74,222,128,0.08);
+  border:1px solid rgba(74,222,128,0.2);
+  color:#4ade80;
+  padding:8px 18px;
+  border-radius:100px;
+  font-size:12px;
+  font-family:'JetBrains Mono',monospace;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  margin-bottom:28px;
+}
+
+/* NAME */
+#Name{
+  font-size:95px;
+  font-weight:900;
+  line-height:1;
+  letter-spacing:-4px;
+  margin-bottom:15px;
+}
+
+/* ROLE */
+#Heading_2{
+  color:#94a3b8;
+  font-size:18px;
+  font-family:'JetBrains Mono',monospace;
+  margin-bottom:30px;
+}
+
+/* DESCRIPTION */
+#Description{
+  max-width:650px;
+  color:#94a3b8;
+  font-size:18px;
+  line-height:1.8;
+  margin-bottom:40px;
+}
+
+/* BUTTON */
+button{
+  width:fit-content;
+  background:#4ade80;
+  color:black;
+  border:none;
+  border-radius:12px;
+  padding:14px 28px;
+  font-size:15px;
+  font-weight:700;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+/* BUTTON HOVER */
+button:hover{
+  background:#86efac;
+  transform:translateY(-3px);
+  box-shadow:0 10px 30px rgba(74,222,128,0.3);
+}
+

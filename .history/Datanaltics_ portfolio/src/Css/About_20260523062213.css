@@ -1,0 +1,196 @@
+/* ABOUT SECTION */
+.about-section{
+
+  width:100%;
+
+  min-height:100vh;
+
+  padding:100px 80px;
+
+  background:#0a0e17;
+
+  color:white;
+}
+
+/* CONTAINER */
+.about-container{
+
+  display:grid;
+
+  grid-template-columns:1.2fr 0.8fr;
+
+  gap:60px;
+
+  align-items:center;
+}
+
+/* TAG */
+.about-tag{
+
+  width:fit-content;
+
+  padding:8px 18px;
+
+  border-radius:50px;
+
+  background:rgba(74,222,128,0.08);
+
+  border:1px solid rgba(74,222,128,0.2);
+
+  color:#4ade80;
+
+  font-size:12px;
+
+  font-family:'JetBrains Mono',monospace;
+
+  letter-spacing:2px;
+
+  text-transform:uppercase;
+
+  margin-bottom:25px;
+}
+
+/* HEADING */
+.about-heading{
+
+  font-size:60px;
+
+  font-weight:900;
+
+  line-height:1.1;
+
+  margin-bottom:30px;
+}
+
+.about-heading span{
+  color:#4ade80;
+}
+
+/* TEXT */
+.about-text{
+
+  color:#94a3b8;
+
+  font-size:18px;
+
+  line-height:1.8;
+
+  margin-bottom:25px;
+
+  max-width:700px;
+}
+
+/* BOX */
+.about-box{
+
+  display:flex;
+
+  gap:20px;
+
+  flex-wrap:wrap;
+
+  margin-top:40px;
+}
+
+/* ITEM */
+.about-item{
+
+  background:#111827;
+
+  border:1px solid rgba(255,255,255,0.08);
+
+  padding:20px;
+
+  border-radius:20px;
+
+  min-width:180px;
+}
+
+.about-item h3{
+
+  color:#4ade80;
+
+  margin-bottom:10px;
+}
+
+/* RIGHT */
+.about-right{
+
+  display:flex;
+
+  justify-content:center;
+}
+
+/* CARD */
+.about-card{
+
+  width:100%;
+
+  max-width:350px;
+
+  background:#111827;
+
+  border:1px solid rgba(255,255,255,0.08);
+
+  border-radius:30px;
+
+  padding:40px 30px;
+}
+
+/* CARD TITLE */
+.about-card h2{
+
+  font-size:32px;
+
+  margin-bottom:20px;
+}
+
+/* CARD TEXT */
+.about-card p{
+
+  color:#94a3b8;
+
+  line-height:1.8;
+
+  margin-bottom:25px;
+}
+
+/* SKILLS */
+.about-skills{
+
+  display:flex;
+
+  flex-wrap:wrap;
+
+  gap:12px;
+}
+
+/* SKILL */
+.about-skills span{
+
+  padding:10px 16px;
+
+  background:rgba(255,255,255,0.05);
+
+  border:1px solid rgba(255,255,255,0.08);
+
+  border-radius:50px;
+
+  font-size:14px;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+
+  .about-container{
+    grid-template-columns:1fr;
+  }
+
+  .about-section{
+    padding:70px 25px;
+  }
+
+  .about-heading{
+    font-size:42px;
+  }
+}

@@ -1,0 +1,354 @@
+/* ═══════════════════════════════════════════════════════
+   SkillsAndCerts.css
+   Pair with SkillsAndCerts.jsx
+   Fonts needed in index.html:
+   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet"/>
+═══════════════════════════════════════════════════════ */
+
+/* ── Section shell ── */
+.sc-section {
+  background: #06090f;
+  padding: clamp(4rem, 8vw, 7rem) clamp(1rem, 5vw, 4rem);
+  font-family: "Outfit", sans-serif;
+  color: #f1f5f9;
+}
+.sc-section--dark {
+  background: #0a0e17;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.sc-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ── Section header ── */
+.sc-tag {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.66rem;
+  color: #4ade80;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+.sc-tag::before {
+  content: "//";
+  color: #475569;
+}
+
+.sc-title {
+  font-size: clamp(1.9rem, 4.5vw, 2.8rem);
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+  margin-bottom: 0.7rem;
+}
+
+.sc-sub {
+  color: #94a3b8;
+  font-size: 0.91rem;
+  line-height: 1.75;
+  max-width: 560px;
+  margin-bottom: 2.5rem;
+}
+
+/* ══════════════════════════════════
+   SKILLS
+══════════════════════════════════ */
+.sc-skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.25rem;
+}
+
+/* ── Skill card ── */
+.sc-skill-card {
+  background: #0f1520;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 16px;
+  padding: 1.6rem;
+  transition: border-color 0.25s, transform 0.25s;
+}
+.sc-skill-card:hover {
+  border-color: rgba(74, 222, 128, 0.2);
+  transform: translateY(-3px);
+}
+
+.sc-skill-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-bottom: 1.4rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.sc-skill-icon {
+  font-size: 1.3rem;
+  width: 38px;
+  height: 38px;
+  background: rgba(74, 222, 128, 0.07);
+  border: 1px solid rgba(74, 222, 128, 0.15);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.sc-skill-group-label {
+  font-weight: 700;
+  font-size: 0.92rem;
+  letter-spacing: 0.01em;
+}
+
+/* ── Skill rows ── */
+.sc-skill-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.sc-skill-row {
+    
+}
+
+.sc-skill-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.4rem;
+}
+
+.sc-skill-name {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #cbd5e1;
+}
+
+.sc-skill-pct {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+.sc-bar-track {
+  height: 5px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 99px;
+  overflow: hidden;
+}
+
+.sc-bar-fill {
+  height: 100%;
+  border-radius: 99px;
+  transition: width 1.2s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+/* ══════════════════════════════════
+   STATS ROW
+══════════════════════════════════ */
+.sc-stats-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.sc-stat-box {
+  background: #0f1520;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  padding: 1.1rem 1rem;
+  text-align: center;
+  transition: border-color 0.2s;
+}
+.sc-stat-box:hover {
+  border-color: rgba(74, 222, 128, 0.2);
+}
+
+.sc-stat-n {
+  font-size: 1.7rem;
+  font-weight: 900;
+  color: #4ade80;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  margin-bottom: 0.25rem;
+  font-family: "Outfit", sans-serif;
+}
+
+.sc-stat-l {
+  font-size: 0.72rem;
+  color: #64748b;
+  font-family: "JetBrains Mono", monospace;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* ══════════════════════════════════
+   CERTIFICATES GRID
+══════════════════════════════════ */
+.sc-cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  gap: 1rem;
+}
+
+/* ── Cert card ── */
+.sc-cert-card {
+  background: #0f1520;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 14px;
+  padding: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  text-decoration: none;
+  color: #f1f5f9;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.26s ease, border-color 0.26s ease, box-shadow 0.26s ease;
+  cursor: pointer;
+}
+.sc-cert-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--cert-border);
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.45);
+}
+.sc-cert-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, var(--cert-bg), transparent 60%);
+  opacity: 0;
+  transition: opacity 0.26s;
+}
+.sc-cert-card:hover::before {
+  opacity: 1;
+}
+
+/* Featured cert */
+.sc-cert-card--feat {
+  border-color: rgba(250, 204, 21, 0.25);
+}
+.sc-cert-card--feat::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #facc15, #4ade80, transparent);
+  background-size: 200% 100%;
+  animation: sc-shimmer 3s linear infinite;
+}
+@keyframes sc-shimmer {
+  to { background-position: -200% 0; }
+}
+
+.sc-cert-feat-label {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(250, 204, 21, 0.12);
+  border: 1px solid rgba(250, 204, 21, 0.25);
+  color: #fde68a;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.58rem;
+  letter-spacing: 0.06em;
+  padding: 0.18rem 0.55rem;
+  border-radius: 100px;
+  z-index: 2;
+}
+
+/* icon wrap */
+.sc-cert-icon-wrap {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  flex-shrink: 0;
+}
+.sc-cert-icon {
+  font-size: 1.5rem;
+}
+
+/* info */
+.sc-cert-info {
+  position: relative;
+  z-index: 1;
+  flex: 1;
+}
+.sc-cert-title {
+  font-weight: 800;
+  font-size: 0.95rem;
+  margin-bottom: 0.25rem;
+  line-height: 1.2;
+}
+.sc-cert-issuer {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.68rem;
+  color: #64748b;
+  letter-spacing: 0.04em;
+}
+
+/* footer */
+.sc-cert-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+}
+.sc-cert-tag {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.6rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 100px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.sc-cert-view {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.68rem;
+  color: #4ade80;
+  letter-spacing: 0.04em;
+  transition: letter-spacing 0.2s;
+}
+.sc-cert-card:hover .sc-cert-view {
+  letter-spacing: 0.1em;
+}
+
+/* ══════════════════════════════════
+   RESPONSIVE
+══════════════════════════════════ */
+@media (max-width: 900px) {
+  .sc-stats-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .sc-skills-grid {
+    grid-template-columns: 1fr;
+  }
+  .sc-cert-grid {
+    grid-template-columns: 1fr;
+  }
+  .sc-stats-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 380px) {
+  .sc-stats-row {
+    grid-template-columns: 1fr 1fr;
+  }
+}

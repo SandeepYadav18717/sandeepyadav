@@ -1,0 +1,4 @@
+function Photo(image){
+    return(
+        
+}

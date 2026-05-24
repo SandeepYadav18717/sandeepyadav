@@ -1,0 +1,153 @@
+/* GOOGLE FONT */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;900&family=JetBrains+Mono:wght@400;700&display=swap');
+
+/* BODY */
+body{
+  margin:0;
+  padding:0;
+  background:#050709;
+  color:white;
+  font-family:'Outfit',sans-serif;
+  overflow-x:hidden;
+}
+
+/* MAIN SECTION */
+.main-page{
+  min-height:100vh;
+
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+
+  padding:80px;
+
+  position:relative;
+
+  /* background glow */
+  background:
+  radial-gradient(circle at top right,
+  rgba(74,222,128,0.08),
+  transparent 35%),
+
+  radial-gradient(circle at bottom left,
+  rgba(56,189,248,0.06),
+  transparent 35%);
+}
+
+/* SMALL TOP TAG */
+#Heading_1{
+  width:fit-content;
+
+  background:rgba(74,222,128,0.08);
+
+  border:1px solid rgba(74,222,128,0.25);
+
+  color:#4ade80;
+
+  padding:10px 18px;
+
+  border-radius:50px;
+
+  font-size:12px;
+
+  font-family:'JetBrains Mono',monospace;
+
+  letter-spacing:2px;
+
+  text-transform:uppercase;
+
+  margin-bottom:30px;
+}
+
+/* NAME */
+#Name{
+  font-size:90px;
+
+  font-weight:900;
+
+  line-height:1;
+
+  letter-spacing:-3px;
+
+  margin-bottom:15px;
+}
+
+/* ROLE */
+#Heading_2{
+  color:#94a3b8;
+
+  font-size:18px;
+
+  font-family:'JetBrains Mono',monospace;
+
+  margin-bottom:30px;
+}
+
+/* DESCRIPTION */
+#Description{
+  max-width:650px;
+
+  color:#94a3b8;
+
+  font-size:18px;
+
+  line-height:1.8;
+
+  margin-bottom:40px;
+}
+
+/* BUTTON */
+button{
+  width:fit-content;
+
+  background:#4ade80;
+
+  color:black;
+
+  border:none;
+
+  padding:14px 28px;
+
+  border-radius:12px;
+
+  font-size:15px;
+
+  font-weight:700;
+
+  cursor:pointer;
+
+  transition:0.3s;
+}
+
+/* BUTTON HOVER */
+button:hover{
+  background:#86efac;
+
+  transform:translateY(-3px);
+
+  box-shadow:0 10px 30px rgba(74,222,128,0.3);
+}
+
+/* MOBILE */
+@media(max-width:768px){
+
+  .main-page{
+    padding:40px;
+  }
+
+  #Name{
+    font-size:55px;
+  }
+
+  #Heading_2{
+    font-size:15px;
+  }
+
+  #Description{
+    font-size:16px;
+  }
+
+  button{
+    width:100%;
+  }
+}

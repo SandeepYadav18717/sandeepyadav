@@ -1,0 +1,195 @@
+/* SECTION */
+.projects-section{
+
+  width:100%;
+
+  min-height:100vh;
+
+  background:#050709;
+
+  color:white;
+
+  padding:100px 80px;
+}
+
+/* HEADING */
+.projects-heading{
+
+  text-align:center;
+
+  margin-bottom:70px;
+}
+
+/* SMALL TEXT */
+.projects-heading p{
+
+  color:#4ade80;
+
+  font-size:14px;
+
+  letter-spacing:3px;
+
+  margin-bottom:15px;
+}
+
+/* TITLE */
+.projects-heading h1{
+
+  font-size:70px;
+
+  font-weight:900;
+}
+
+/* CONTAINER */
+.projects-container{
+
+  display:grid;
+
+  grid-template-columns:
+  repeat(auto-fit,minmax(320px,1fr));
+
+  gap:30px;
+}
+
+/* CARD */
+.project-card{
+
+  background:#111827;
+
+  border:1px solid rgba(255,255,255,0.08);
+
+  border-radius:30px;
+
+  overflow:hidden;
+
+  transition:0.4s;
+
+  box-shadow:
+  0 20px 40px rgba(0,0,0,0.3);
+}
+
+/* HOVER */
+.project-card:hover{
+
+  transform:
+  translateY(-10px)
+  scale(1.02);
+
+  border-color:
+  rgba(74,222,128,0.4);
+}
+
+/* IMAGE */
+.project-image{
+
+  height:220px;
+
+  display:flex;
+
+  justify-content:center;
+
+  align-items:center;
+
+  font-size:80px;
+
+  background:
+  linear-gradient(
+  135deg,
+  rgba(74,222,128,0.12),
+  rgba(56,189,248,0.12)
+  );
+}
+
+/* CONTENT */
+.project-content{
+
+  padding:30px;
+}
+
+/* TITLE */
+.project-content h2{
+
+  font-size:28px;
+
+  margin-bottom:15px;
+}
+
+/* DESCRIPTION */
+.project-content p{
+
+  color:#94a3b8;
+
+  line-height:1.8;
+
+  margin-bottom:25px;
+}
+
+/* SKILLS */
+.project-skills{
+
+  display:flex;
+
+  flex-wrap:wrap;
+
+  gap:12px;
+
+  margin-bottom:25px;
+}
+
+/* TAG */
+.project-skills span{
+
+  background:rgba(255,255,255,0.05);
+
+  border:1px solid rgba(255,255,255,0.08);
+
+  padding:8px 14px;
+
+  border-radius:50px;
+
+  font-size:13px;
+}
+
+/* BUTTON */
+.project-card button{
+
+  width:100%;
+
+  background:#4ade80;
+
+  color:black;
+
+  border:none;
+
+  padding:14px;
+
+  border-radius:12px;
+
+  font-size:15px;
+
+  font-weight:700;
+
+  cursor:pointer;
+
+  transition:0.3s;
+}
+
+/* BUTTON HOVER */
+.project-card button:hover{
+
+  background:#86efac;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+
+  .projects-section{
+
+    padding:70px 25px;
+  }
+
+  .projects-heading h1{
+
+    font-size:42px;
+  }
+}

@@ -1,0 +1,210 @@
+/* ═══════════════════════════════════════════
+   FeaturedProjects.css
+   Import the fonts in your index.html:
+   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet"/>
+═══════════════════════════════════════════ */
+
+/* ── Section wrapper ── */
+.fp-section {
+  background: #06090f;
+  padding: clamp(4rem, 8vw, 7rem) clamp(1rem, 5vw, 5rem);
+  font-family: "Outfit", sans-serif;
+  color: #f1f5f9;
+}
+
+.fp-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ── Section header ── */
+.fp-sec-tag {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.68rem;
+  color: #4ade80;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 0.6rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.fp-sec-tag::before {
+  content: "//";
+  color: #475569;
+}
+
+.fp-sec-title {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  margin-bottom: 0.75rem;
+  line-height: 1.05;
+}
+
+.fp-sec-sub {
+  color: #94a3b8;
+  font-size: 0.92rem;
+  line-height: 1.75;
+  max-width: 520px;
+  margin-bottom: 2.5rem;
+}
+
+/* ── Grid ── */
+.fp-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.25rem;
+}
+
+/* ── Card ── */
+.fp-card {
+  background: #0f1520;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 18px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.28s ease, border-color 0.28s ease, box-shadow 0.28s ease;
+  cursor: default;
+}
+.fp-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(74, 222, 128, 0.25);
+  box-shadow:
+    0 28px 60px rgba(0, 0, 0, 0.5),
+    0 0 0 1px rgba(74, 222, 128, 0.08);
+}
+
+/* ── Thumbnail gradients ── */
+.fp-thumb {
+  height: 165px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+.fp-t1 { background: linear-gradient(135deg, #050d1e, #0a1e38); }
+.fp-t2 { background: linear-gradient(135deg, #060f12, #081c20); }
+.fp-t3 { background: linear-gradient(135deg, #100a00, #0d1828); }
+.fp-t4 { background: linear-gradient(135deg, #10050f, #080d22); }
+.fp-t5 { background: linear-gradient(135deg, #04101a, #091220); }
+.fp-t6 { background: linear-gradient(135deg, #0f0614, #070c1e); }
+
+/* ── SVG chart animations ── */
+.fp-chart {
+  overflow: visible;
+}
+
+.fp-draw {
+  stroke-dasharray: 320;
+  stroke-dashoffset: 320;
+  animation: fp-draw 1.8s ease forwards;
+}
+.fp-draw--delay {
+  animation-delay: 0.35s;
+}
+@keyframes fp-draw {
+  to { stroke-dashoffset: 0; }
+}
+
+.fp-bar {
+  transform-origin: bottom center;
+  transform: scaleY(0);
+  animation: fp-rise 0.65s ease forwards;
+}
+@keyframes fp-rise {
+  to { transform: scaleY(1); }
+}
+
+/* ── Card body ── */
+.fp-body {
+  padding: 1.4rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.fp-cat {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.62rem;
+  color: #4ade80;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 0.45rem;
+}
+
+.fp-title {
+  font-size: 1.05rem;
+  font-weight: 800;
+  margin-bottom: 0.45rem;
+  line-height: 1.2;
+  color: #f1f5f9;
+}
+
+.fp-desc {
+  font-size: 0.8rem;
+  color: #94a3b8;
+  line-height: 1.65;
+  flex: 1;
+  margin-bottom: 1.1rem;
+}
+
+/* ── Card footer ── */
+.fp-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.fp-tags {
+  display: flex;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+}
+
+.fp-tag {
+  background: rgba(56, 189, 248, 0.09);
+  color: #7dd3fc;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.6rem;
+  padding: 0.18rem 0.55rem;
+  border-radius: 5px;
+  letter-spacing: 0.04em;
+}
+
+.fp-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  color: #4ade80;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.7rem;
+  text-decoration: none;
+  white-space: nowrap;
+  border: 1px solid rgba(74, 222, 128, 0.2);
+  padding: 0.3rem 0.7rem;
+  border-radius: 6px;
+  transition: color 0.2s, gap 0.2s, background 0.2s;
+}
+.fp-link:hover {
+  color: #86efac;
+  gap: 0.5rem;
+  background: rgba(74, 222, 128, 0.06);
+}
+
+/* ── Responsive ── */
+@media (max-width: 720px) {
+  .fp-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .fp-foot {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
