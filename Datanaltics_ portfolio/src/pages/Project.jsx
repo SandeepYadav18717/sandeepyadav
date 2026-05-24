@@ -26,7 +26,7 @@ const projects = [
     title: "Tata Sales Analysis",
     desc: "End-to-end sales analytics report for Tata — revenue breakdowns, regional performance, product-line trends, and YoY comparisons visualized through rich charts and executive-ready PDF dashboards.",
     tags: ["Python", "Pandas", "Power BI", "PDF Report"],
-    liveLink: "https://github.com/SandeepYadav18717/sales_Anlytcs/blob/main/Sales%20Analysis1_merged.pdf",
+    liveLink: "https://github.com/SandeepYadav18717/Tata_analytics/blob/main/Tata%20analysis.pdf",
     githubLink: "https://github.com/SandeepYadav18717/sales_Anlytcs",
     thumb: "t-sales",
     chart: "sales",
