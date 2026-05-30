@@ -55,7 +55,7 @@ const projects = [
     thumb: "t-weather",
     chart: "bars-blue",
     featured: false,
-  },
+  }
 //   {
 //     id: 5,
 //     cat: "Portfolio Site",
