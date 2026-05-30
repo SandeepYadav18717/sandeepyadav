@@ -55,19 +55,7 @@ const projects = [
     thumb: "t-weather",
     chart: "bars-blue",
     featured: false,
-  }
-//   {
-//     id: 5,
-//     cat: "Portfolio Site",
-//     title: "Personal Portfolio",
-//     desc: "A React + Vite portfolio showcasing projects, skills, and experience. Component-based architecture with smooth animations and fully responsive layout across all screen sizes.",
-//     tags: ["React", "Vite", "CSS"],
-//     liveLink: "https://sandeepyadav18717.github.io/sandeep/",
-//     githubLink: "https://github.com/SandeepYadav18717/Sandeep_portfolio",
-//     thumb: "t-port",
-//     chart: "donut",
-//     featured: false,
-//   },
+  },
   {
     id: 6,
     cat: "Creative App",
